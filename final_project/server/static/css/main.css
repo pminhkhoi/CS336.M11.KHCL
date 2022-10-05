@@ -1,0 +1,46 @@
+#imageInput {
+  padding-bottom: 25px;
+}
+
+#searchbutton {
+  margin-top: 25px;
+}
+.resultBox {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+.resultImage {
+  display: none;
+}
+
+.resultImage > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.resultImage > div > p {
+  margin-left: 25px;
+}
+
+p {
+  margin: 0
+}
+
+.loader {
+  margin-bottom: 5px;
+  border: 5px solid #f3f3f3;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css" />
+  <link rel="stylesheet" href="{{url_for('static', filename='./css/main.css')}}" />
+  <script src="https://unpkg.com/jcrop"></script>
+  <script src="{{url_for('static', filename='./js/search.js')}}"></script>
+
+  <title>CIBR</title>
+</head>
+
+<body>
+  <h1>Content Based Image Retrieval</h1>
+  <p>Please upload an image:</p>
+  <div>
+    <form method=post enctype=multipart/form-data>
+      <input type="file" id="imageInput" name="imageInput" accept="image/png, image/jpeg" />
+    </form>
+  </div>
+  <img id="queryImage" src="#" alt=" " />
+
+  <div id="searchdiv">
+  </div>
+
+  <div class="resultImage" id="resultImage">
+    <!-- <div class="resultBox">
+      <img id="resultimg" src="./image_data/all_souls_000000.jpg" width=256 height=256 />
+      Similarity: 0.5
+    </div> -->
+  </div>
+</body>
+
+</html>
